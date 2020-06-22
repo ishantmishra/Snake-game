@@ -143,9 +143,14 @@ function draw(){
     ctx.fillText(score,2*box,1.6*box);
 }
 
+
 // call draw function every 100 ms
 
 let game = setInterval(draw,100);
+
+function playAgain() {
+    window.location.reload();
+}
 
 
 
