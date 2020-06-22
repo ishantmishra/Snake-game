@@ -152,6 +152,10 @@ function playAgain() {
     window.location.reload();
 }
 
+function moveUp() {
+    snakeY -= box;
+}
+
 
 
 

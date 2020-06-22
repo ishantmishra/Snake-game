@@ -3,6 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
     <head>
         <title>Snake Game</title>
         <style>
@@ -14,11 +16,29 @@
         
     </head>
     <canvas id="snake" width="608" height="608"></canvas>
-    <script src="snake.js"></script>
+    
 
 <body>
     <div class="container">
-        <button class="btn btn-success" id="play-again" onclick="playAgain()">Play Again</button>
+        <h2>Wanna Play Again</h2>
+        <div class="flex-box-container">
+            <div>
+                <button class="btn btn-success" onclick="playAgain()">Voila</button>
+            </div>
+        </div>
+
+        <div class="flex-box-container-2">
+            <div>
+                <button class="btn btn-primary" onclick="moveUp()">UP</button><br> <br>
+                <button class="btn btn-primary" onclick="moveRight()" >RIGHT</button>
+                <button class="btn btn-primary" onclick="moveDown()">DOWN</button>
+                <button class="btn btn-primary" onclick="moveLeft()">LEFT</button>
+                
+            </div>
+        </div>
+        
     </div>
+
+    <script src="snake.js"></script>
 </body>
 </html>
