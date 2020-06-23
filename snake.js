@@ -103,10 +103,10 @@ function draw(){
     let snakeY = snake[0].y;
     
     // which direction
-    if( d == "LEFT") snakeX -= box;
-    if( d == "UP") snakeY -= box;
-    if( d == "RIGHT") snakeX += box;
-    if( d == "DOWN") snakeY += box;
+    if( d == "LEFT" ||d === moveLeft()) snakeX -= box;
+    if( d == "UP" || d === moveUp()) snakeY -= box;
+    if( d == "RIGHT" || d === moveRight()) snakeX += box;
+    if( d == "DOWN" || d === moveDown()) snakeY += box;
     
     // if the snake eats the food
     if(snakeX == food.x && snakeY == food.y){
@@ -153,10 +153,21 @@ function playAgain() {
 }
 
 function moveUp() {
-    snakeY -= box;
+    d == "UP";
+    snake.snakeY -= box;
 }
-
-
+function moveDown() {
+    d == "Down";
+    snake.snakeY += box;
+}
+function moveLeft() {
+    d == "Left";
+    snake.snakeX -= box;
+}
+function moveRight() {
+    d == "Right";
+    snake.snakeX += box;
+}
 
 
 
